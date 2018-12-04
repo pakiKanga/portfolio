@@ -47,14 +47,14 @@
 
 .project {
   background-color: white;
-  height: 240px;
   margin: 20px;
   color: white;
   font-weight: bold;
   text-align: center;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    position: relative;
-    height: 100%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  position: relative;
+  display: table;
+  height: 100%;
 }
 
 .project-top-bar {
@@ -62,11 +62,6 @@
   padding: 10px 0px 10px 0px;
 }
 
-.project-summary {
-  color: black;
-  padding: 10px 10px 10px 0px;
-
-}
 
 .project-bottom-bar {
   position: absolute;
@@ -83,23 +78,27 @@
 
 }
 
+.project-summary {
+  color: black;
+  padding: 10px 10px 10px 0px;
+  overflow: hidden;
+  display: table-row;
+
+}
+
 .image-container {
-  width: 50%;
+  padding: 10px;
+  width: 100%;
+  float: left;
   max-width: 240px;
+
 }
 
 .project-info-container {
   float: right;
   width: 80%;
   max-width: 640px;
-  float: right;
-  padding-left: 150px;
-}
-
-
-
-.project-info {
-
+  padding: 30px 20px 0px 150px;
 }
 
 .project-image {

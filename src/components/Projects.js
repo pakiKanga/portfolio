@@ -43,7 +43,7 @@ class Projects extends Component {
 
             <div className="project-summary">
               <div className="image-container">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+                <img class="project-image" src={heyFam}></img>
               </div>
 
               <div className="project-info-container">
