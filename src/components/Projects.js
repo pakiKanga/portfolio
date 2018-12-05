@@ -5,7 +5,7 @@ class Projects extends Component {
     return (
       <div className="projects-container">
         <div className="projects-header">
-          <span>Featured Projects</span>
+          <span>Featured Projects - </span>
         </div>
         <div className="projects-content">
           <div className="project">
@@ -25,12 +25,9 @@ class Projects extends Component {
                   I am really bored. I need to add a craptonne of text to see
                   what happens.
                 </p>
-              </div>
-
-
-
-              <div className="project-bottom-bar">
-                <span className="text-muted">Flask | Materialise</span>
+                <div className="project-bottom-bar">
+                  <span className="text-muted">Flask | Materialise | MySQL</span>
+                </div>
               </div>
             </div>
           </div>
@@ -53,13 +50,13 @@ class Projects extends Component {
                   I am really bored. I need to add a craptonne of text to see
                   what happens.
                 </p>
+                  <div className="project-bottom-bar">
+                    <span className="text-muted">ReactJS | Node (ExpressJS) | MySQL</span>
+                  </div>
               </div>
 
 
 
-              <div className="project-bottom-bar">
-                <span className="text-muted">Flask | Materialise</span>
-              </div>
             </div>
           </div>
         </div>

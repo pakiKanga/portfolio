@@ -4,11 +4,11 @@ class Summary extends Component {
   render() {
     return (
       <div className="summary-container">
-        <p className="summary-intro">Hi, Im Ali. </p>
-        <p className="content">I am a software engineer and graphic designer.</p>
+        <h1 className="summary-intro">Hi, Im Ali. </h1>
+        <h2 className="content">I am a software engineer and graphic designer.</h2>
 
-        <p className="current-occupation">
-        <strong>Currently: </strong> University of Sydney (Software Developer Intern)</p> 
+        <h3 className="current-occupation">
+        <strong>Currently: </strong> University of Sydney (Software Developer Intern)</h3>
       </div>
     );
   }
