@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import heyFam from './../images/HeyFam.PNG';
 import mPoint from './../images/MeetupPoint.PNG';
 import './../css/project.css'
-import ReactJson from 'react-json-view'
 import portfolio_data from '../data/portfolio.json'
 
 class Projects extends Component {
