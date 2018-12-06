@@ -22,6 +22,9 @@
     min-height: 420px;
   }
   
+  .projects-container {
+    margin-bottom: 10vh;
+  }
   .project-top-bar {
     background-color: #0052CC;
     padding: 10px 0px 10px 0px;
