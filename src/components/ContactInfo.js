@@ -4,9 +4,11 @@ import './../css/contact.css'
 class ContactInfo extends Component {
   render() {
     return (
-      <div className="">
-          <span className="interest-message">Need something? Get in touch.</span>
-          <ul className="contact-container">
+      <div className="contact-container">
+          <div className="interest-container">
+            <span className="interest-message">Need something? Get in touch.</span>
+          </div>
+          <ul className="contact-list">
           <li>
             <a href="https://www.linkedin.com/in/shaikhspeare/">
               <i class="fab fa-linkedin contact-icon"></i>
