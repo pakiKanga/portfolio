@@ -27,7 +27,7 @@
 
   .current-project {
     padding: 0px 0px 0px 0px;
-    flex-grow: 2 ;
+    flex-grow: 2;
     color: white;
     position: relative;
   }
@@ -144,9 +144,15 @@
 
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 300px) {
 
   .current-project {
     width: 100%;
+    
   }
+
+}
+
+p {
+  word-wrap: break-word;
 }
