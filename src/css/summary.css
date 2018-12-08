@@ -29,3 +29,8 @@
     clear: both;
   }
   
+  @media only screen and (max-width: 600px) {
+    .summary-container {
+      padding-top: 50px;
+    }
+}

@@ -5,11 +5,10 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     justify-content: flex-end;
 
-
 }
 
 .contact-list {
-    padding-right: 20vh;
+    padding-right: 20vw;
     padding-top: 20px;
     display: flex;
     list-style: none;
@@ -39,3 +38,10 @@
     color: #FF9800;
     transition: color .25s ease
   }
+
+  @media only screen and (max-width: 600px) {
+
+    .interest-message {
+      font-size: 18px;
+    }
+}
