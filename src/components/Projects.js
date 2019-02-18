@@ -63,12 +63,8 @@ class Projects extends Component {
           </div>
 
           {currentProject}
-          <div className="current-project-image">
-            <img class="project-image"></img>
-          </div>
           
         </div>
-
       </div>
     );
   }
