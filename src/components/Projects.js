@@ -32,9 +32,11 @@ class Projects extends Component {
     if (portfolio_data[i].projectName == this.state.currentProject) {
       var currentProject = 
         <div className="current-project">
-          <div className="project-top-bar">
-            <h3 className="project-heading">{portfolio_data[i].projectName}</h3>
-          </div>
+          <a className="top-bar-link" href={portfolio_data[i].link}>
+            <div className="project-top-bar">
+              <h3 className="project-heading">{portfolio_data[i].projectName}</h3>
+            </div>
+          </a>
 
           <div className="project-summary">
             <div className="project-info-container">

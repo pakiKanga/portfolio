@@ -1,7 +1,37 @@
 [
-      {"id": 1, "projectName": "HeyFam", "summary":"Helps you find the best places to meet up with friends using a mid-point algorithm", "tech": "Materialise | Flask | MySQL", "image": "heyFam"},
-      {"id": 2, "projectName": "Meetup Point", "summary": "Helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes", "tech": "React | Node | MySQL", "image": "mPoint"},
-      {"id": 3, "projectName": "SpaceCraft VR", "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system.", "tech": "C++ | Unreal Engine"},
-      {"id": 4, "projectName": "Application Verification System", "summary": "Web form system built for the Pakistani Consulate. Applicants can fill and submit forms which are administrated by different tiers of administration. Includes support for file upload & mobile responsive", "tech": "Materialise | Flask | MySQL"},
-      {"id": 5, "projectName": "This Portfolio", "summary": "Easy to maintain portfolio, I only need to update a JSON file which is conditionally rendered by React.", "tech": "React | Bootstrap"}
+      {
+            "id": 1,
+            "projectName": "HeyFam", 
+            "summary":"Helps you find the best places to meet up with friends using a mid-point algorithm. Simply enter your locations and hit submit.", 
+            "tech": "Materialise | Flask | MySQL", 
+            "image": "heyFam", 
+            "link": "https://heyfam.io"
+      },
+      {
+            "id": 2, 
+            "projectName": "Meetup Point", 
+            "summary": "Similar to the previous concept, Meetup Point helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
+            "tech": "React | Node | MySQL", 
+            "image": "mPoint",
+            "link": "http://13.211.93.157"
+      },
+      {
+            "id": 3, 
+            "projectName": "SpaceCraft VR", 
+            "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system.", 
+            "tech": "Virtual Reality | C++ | Unreal Engine",
+            "link": "https://drive.google.com/file/d/1X8MVCmwR_pD-lhWhr9C0Hn_6CSiVg4HC/view?usp=sharing"
+      },
+      {
+            "id": 4, 
+            "projectName": "Application Verification System", 
+            "summary": "Web form system built for the Pakistani Consulate. Applicants can fill and submit forms which are administrated by different tiers of administration. Includes support for file upload & mobile responsive", 
+            "tech": "Materialise | Flask | MySQL",
+            "link": "http://pakikanga2.pythonanywhere.com"
+      },
+      {
+            "id": 5, 
+            "projectName": "This Portfolio", 
+            "summary": "Easy to maintain portfolio, I only need to update a JSON file which is conditionally rendered by React.", 
+            "tech": "React | Bootstrap"}
 ]

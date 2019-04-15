@@ -160,3 +160,13 @@
 p {
   word-wrap: break-word;
 }
+
+.top-bar-link {
+  text-decoration: none;
+  color: white;
+}
+
+.top-bar-link:hover {
+  color:rgb(212, 104, 14);
+  text-decoration: none;
+}
