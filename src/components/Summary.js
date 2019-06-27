@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './../css/summary.css'
-
 class Summary extends Component {
   render() {
     return (
@@ -10,6 +9,7 @@ class Summary extends Component {
 
         <h3 className="current-occupation">
         <strong>Currently: </strong> University of Sydney (Software Developer Intern)</h3>
+
       </div>
     );
   }

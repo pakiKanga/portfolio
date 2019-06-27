@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import heyFam from './../images/HeyFam.PNG';
-import mPoint from './../images/MeetupPoint.PNG';
 import './../css/project.css'
 import portfolio_data from '../data/portfolio.json'
+import ProjectCard from './ProjectCard.js'
 
 class Projects extends Component {
   constructor(props) {
@@ -22,51 +21,14 @@ class Projects extends Component {
 
   render() {
     const projectList = portfolio_data.map((project) =>
-      <a className="project-link" href="#" onClick={(e) => this.setCurrentProject(project.projectName, e)}>
-        <li id={project.projectName} className="project-decoration">{project.projectName}</li>
-      </a>
-    
+      <div className="project">
+        <ProjectCard name={project.projectName} tech={project.tech} description={project.summary} image={project.image} />    
+      </div>
     );
 
-  for (var i = 0; i < portfolio_data.length; i++) {
-    if (portfolio_data[i].projectName == this.state.currentProject) {
-      var currentProject = 
-        <div className="current-project">
-          <a className="top-bar-link" href={portfolio_data[i].link}>
-            <div className="project-top-bar">
-              <h3 className="project-heading">{portfolio_data[i].projectName}</h3>
-            </div>
-          </a>
-
-          <div className="project-summary">
-            <div className="project-info-container">
-              <p className="project-info">
-                {portfolio_data[i].summary}
-              </p>
-            </div>
-          </div>
-          <div className="project-bottom-bar">
-            <span className="text-muted">{portfolio_data[i].tech}</span>
-          </div>
-        </div>
-    }
-  }
     return (
       <div className="projects-container">
-
-        <div className="projects-header">
-          <span>Featured Projects</span>
-        </div>
-        <div className="projects-content">
-          <div className="sidebar">
-            <ul className="sidebar-projects">
-              {projectList}
-            </ul>
-          </div>
-
-          {currentProject}
-          
-        </div>
+        {projectList}
       </div>
     );
   }
