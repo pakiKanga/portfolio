@@ -22,7 +22,7 @@ class Projects extends Component {
   render() {
     const projectList = portfolio_data.map((project) =>
       <div className="project">
-        <ProjectCard name={project.projectName} tech={project.tech} description={project.summary} image={project.image} />    
+        <ProjectCard name={project.projectName} tech={project.tech} description={project.summary} image={project.image} link={project.link} />    
       </div>
     );
 

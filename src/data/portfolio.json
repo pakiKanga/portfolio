@@ -35,7 +35,8 @@
             "id": 5, 
             "projectName": "This Portfolio", 
             "summary": "Easy to maintain portfolio, I only need to update a JSON file which is conditionally rendered by React.", 
-            "image": "HeyFam", 
-
-            "tech": "React | Bootstrap"}
+            "image": "shaikh", 
+            "tech": "React | Bootstrap",
+            "link:": "https://shaikhspeare.info"
+      }
 ]

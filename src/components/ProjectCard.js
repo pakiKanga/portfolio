@@ -17,17 +17,25 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faCentercode } from '@fortawesome/free-brands-svg-icons';
+import {faLink, faBold} from '@fortawesome/free-solid-svg-icons';
 
 import './../css/project.css'
+import { blue } from '@material-ui/core/colors';
 
 const styles = theme => ({
   card: {
     maxWidth: 500,
     minWidth: 500,
     minHeight: 530,
-
-
+  },
+  header: {
+    fontSize: 24,
+    align: 'center',
+  },
+  title: {
+    color: red,
+    fontSize: 48,
   },
   media: {
     height: 0,
@@ -35,9 +43,6 @@ const styles = theme => ({
   },
   actions: {
     display: 'flex',
-  },
-  icons: {
-    fontSize: 24,
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -51,7 +56,8 @@ const styles = theme => ({
   },
   avatar: {
     backgroundColor: red[500],
-  },
+    fontSize: 24
+    },
 });
 
 class ProjectCard extends React.Component {
@@ -67,20 +73,11 @@ class ProjectCard extends React.Component {
     console.log(this.props.image);
     return (
       <Card className={classes.card}>
-        <CardHeader 
-          avatar={
-            <Avatar aria-label="Recipe" className={classes.avatar}>
-              {this.props.name[0]}
-            </Avatar>
-          }
-          action={
-            <IconButton>
-              <MoreVertIcon />
-            </IconButton>
-          }
+        <CardHeader className={classes.header}
           title={this.props.name}
           subheader={this.props.tech}
         />
+
         <CardMedia
           className={classes.media}
           image={require('./../images/'+ this.props.image + '.PNG')}
@@ -92,12 +89,10 @@ class ProjectCard extends React.Component {
           </Typography>
         </CardContent>
         
-        <CardActions className={classes.actions} disableActionSpacing>
-          <IconButton className={classes.icons} aria-label="Github">
-            <FontAwesomeIcon icon={faGithub} />
+         <a href={this.props.link}> <IconButton className={classes.icons} aria-label="Github">
+            <FontAwesomeIcon icon={faLink}/>
           </IconButton>
-        
-        </CardActions>
+          </a>
        
       </Card>
     );
