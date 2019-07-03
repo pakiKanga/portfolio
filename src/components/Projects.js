@@ -6,18 +6,10 @@ import ProjectCard from './ProjectCard.js'
 class Projects extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      currentProject: "HeyFam"
-    }
-    this.setCurrentProject = this.setCurrentProject.bind(this);
 
   }
 
-  setCurrentProject(project, e) {
-    e.preventDefault();
-    this.setState({currentProject: project});
-    console.log(project);
-  }
+
 
   render() {
     const projectList = portfolio_data.map((project) =>

@@ -26,7 +26,6 @@ import { blue } from '@material-ui/core/colors';
 const styles = theme => ({
   card: {
     maxWidth: 500,
-    minWidth: 500,
     minHeight: 530,
   },
   header: {

@@ -23,4 +23,5 @@
   .project {
     margin: 20px;
     font-size: 48px;
+    width: fit-content;
   }
