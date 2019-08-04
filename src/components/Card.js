@@ -24,6 +24,8 @@ class Card extends Component {
       mainRef.classList.toggle("filled");
     }
     this.setState({ flipped: true });
+    console.log(this.cardRef.current.getBoundingClientRect());
+
   }
   render() {
     return (
