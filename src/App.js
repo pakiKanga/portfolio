@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from './components/Card.js'
+import ContactInfo from './components/ContactInfo';
 
 
 import logo from './logo.svg';

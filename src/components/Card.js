@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import "./../css/contact.css";
-import Projects from './Projects';
- 
+import Projects from "./Projects";
+import Summary from "./Summary";
+
 class Card extends Component {
   constructor(props) {
     super(props);
     this.cardRef = React.createRef();
     this.mainRef = React.createRef();
+    this.cardBack = React.createRef();
     this.handleClick = this.handleClick.bind(this);
+    this.flipCard = this.flipCard.bind(this);
     this.state = {
       flipped: false
     };
@@ -16,26 +19,31 @@ class Card extends Component {
   handleClick() {
     const container = this.cardRef.current;
     const mainRef = this.mainRef.current;
+    const cardBackRef = this.cardBack.current;
 
-    if (!this.state.flipped) {
+
       container.classList.toggle("flipped");
       container.classList.toggle("unflipped");
       container.classList.toggle("full-screen");
       mainRef.classList.toggle("filled");
-    }
-    this.setState({ flipped: true });
+      cardBackRef.classList.toggle("table-toggle");
+      this.setState({ flipped: true });
+    
     console.log(this.cardRef.current.getBoundingClientRect());
+  }
 
+  flipCard() {
+      this.setState({flipped: false});
+      console.log("flipped set to false");
   }
   render() {
     return (
       <div
         className="flip-card card-container "
         ref={this.mainRef}
-        onClick={this.handleClick}
       >
         <div className="flip-card-inner unflipped shadow" ref={this.cardRef}>
-          <div className="flip-card-front shadow">
+          <div className="flip-card-front shadow" onClick={this.handleClick}> 
             <div className="job-title">
               <span>Full Stack Software Engineer</span>
             </div>
@@ -52,16 +60,28 @@ class Card extends Component {
             </div>
 
             <div className="bottom-section">
-              <span className="email">ali.shaikh@sydney.edu.au</span>
+              <span className="email">
+                {" "}
+                <a href="mailto:ali.shaikh@sydney.edu.au">
+                  <i class="fas fa-envelope contact-icon" />
+                </a>
+              </span>
 
-              <span className="linkedin">Linkedin</span>
+              <span className="linkedin">
+                <a href="https://www.linkedin.com/in/shaikhspeare/">
+                  <i className="fab fa-linkedin contact-icon" />
+                </a>
+              </span>
             </div>
           </div>
-          <div class="flip-card-back">
-              
-            <h1>It</h1>
-            <p>PROJECTS</p>
+          <div className="flip-card-back" ref={this.cardBack}>
+            <Summary />
+
+            <p className="featured-projects">FEATURED PROJECTS</p>
             <Projects />
+            <div className="return-home" onClick={this.handleClick}>
+              <i class="fas fa-chevron-circle-left contact-icon"></i>
+            </div>
           </div>
         </div>
       </div>

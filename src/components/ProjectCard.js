@@ -1,23 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
-import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardContent from '@material-ui/core/CardContent';
-import CardActions from '@material-ui/core/CardActions';
-import Collapse from '@material-ui/core/Collapse';
-import Avatar from '@material-ui/core/Avatar';
+
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import red from '@material-ui/core/colors/red';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faCentercode } from '@fortawesome/free-brands-svg-icons';
 import {faLink, faBold} from '@fortawesome/free-solid-svg-icons';
 
 import './../css/project.css'
@@ -27,6 +19,11 @@ const styles = theme => ({
   card: {
     maxWidth: 500,
     minHeight: 530,
+    '&:hover': {
+      color: 'white',
+      transform: 'scale(1.01)',
+      transition: 'all 0.2s linear'
+    }
   },
   header: {
     fontSize: 24,
@@ -69,8 +66,8 @@ class ProjectCard extends React.Component {
 
   render() {
     const { classes } = this.props;
-    console.log(this.props.image);
     return (
+      <a href={this.props.link}> 
       <Card className={classes.card}>
         <CardHeader className={classes.header}
           title={this.props.name}
@@ -87,13 +84,10 @@ class ProjectCard extends React.Component {
             {this.props.description}
           </Typography>
         </CardContent>
-        
-         <a href={this.props.link}> <IconButton className={classes.icons} aria-label="Github">
-            <FontAwesomeIcon icon={faLink}/>
-          </IconButton>
-          </a>
+
        
       </Card>
+      </a>
     );
   }
 }

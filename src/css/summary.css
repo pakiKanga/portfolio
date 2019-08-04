@@ -1,11 +1,13 @@
 
-.header-container {
-    background-color: white;
+.summary-container {
     width: 100%;
     color: black;
-    padding: 20px 0px 20px 40px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  
+    padding: 40px 0px 20px 80px;
+    text-align: left;
+    font-size: 14px;
+    font-family: "Nunito", sans-serif;
+
+
   }
   
   .name-title {
@@ -19,11 +21,23 @@
   }
   
   .summary-container {
+    font-size: 16px;
+  }
+
+  .summary-intro {
+    font-size: 36px;
+  }
+
+  .content {
     font-size: 24px;
-    padding: 200px 0px 25px 100px;
   }
   
   #clearfix {
     clear: both;
   }
   
+.logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+}

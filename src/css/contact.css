@@ -43,3 +43,13 @@
       font-size: 18px;
     }
 }
+
+.featured-projects {
+  font-size: 24px;
+  font-family: "Nunito", sans-serif;
+}
+
+.return-home {
+  margin-bottom: 40px;
+  cursor: pointer;
+}

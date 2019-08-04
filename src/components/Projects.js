@@ -6,7 +6,6 @@ import ProjectCard from './ProjectCard.js'
 class Projects extends Component {
   constructor(props) {
     super(props);
-
   }
 
 
