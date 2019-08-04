@@ -5,7 +5,12 @@ body {
   background-position: center;
   background-size: auto;
   height: 100%;
+  margin:0;
+  padding: 0;
 }
+
+[data-reactroot] 
+        {height: 100% !important; }
 
 .shadow {
   box-shadow: 0 8px 6px -6px black;
@@ -60,6 +65,18 @@ body {
   margin: 100px auto;
 }
 
+.filled {
+  width: 100vw !important;
+  height: 100vh !important;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  transition: height 1s linear;
+  transition: width 1s linear;
+  transition: margin 0.5s linear;
+}
+
+
 .flip-card {
   background-color: transparent;
   width: 40vw;
@@ -88,7 +105,6 @@ body {
   transform: rotateY(180deg);
 }
 
-
 .flip-card-front,
 .flip-card-back {
   position: absolute;
@@ -106,7 +122,9 @@ body {
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color: #26A69A;
   color: white;
   transform: rotateY(180deg);
+  top: 0;
+  left: 0;
 }
