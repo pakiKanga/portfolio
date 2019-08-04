@@ -18,9 +18,9 @@ class Card extends Component {
     }
   render() {
     return (
-      <div className="flip-card card-container shadow" onClick={this.handleClick}>
-        <div className="flip-card-inner unflipped" ref={this.cardRef}>
-          <div className="flip-card-front">
+      <div className="flip-card card-container" onClick={this.handleClick}>
+        <div className="flip-card-inner unflipped shadow" ref={this.cardRef}>
+          <div className="flip-card-front shadow">
             <div className="job-title">
               <span>Full Stack Software Engineer</span>
             </div>
@@ -42,7 +42,7 @@ class Card extends Component {
               <span className="linkedin">Linkedin</span>
             </div>
           </div>
-          <div class="flip-card-back">
+          <div class="flip-card-back shadow">
       <h1>It</h1> 
       <p>WORKS</p> 
       <p>YEAAAAAAAAAAAAA</p>
