@@ -37,6 +37,7 @@ class Card extends Component {
       console.log("flipped set to false");
   }
   render() {
+    const showProjects = this.state.flipped ? <Projects /> : "";
     return (
       <div
         className="flip-card card-container "
@@ -78,7 +79,7 @@ class Card extends Component {
             <Summary />
 
             <p className="featured-projects">FEATURED PROJECTS</p>
-            <Projects />
+            {showProjects}
             <div className="return-home" onClick={this.handleClick}>
               <i class="fas fa-chevron-circle-left contact-icon"></i>
             </div>
