@@ -76,7 +76,7 @@ class Card extends Component {
               <span className="email">
                 {" "}
                 <a href="mailto:ali.shaikh@sydney.edu.au" target="_blank">
-                  <i class="fas fa-envelope contact-icon" />
+                  <i className="fas fa-envelope contact-icon" />
                 </a>
               </span>
 
