@@ -67,7 +67,7 @@ class ProjectCard extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <a href={this.props.link}> 
+      <a href={this.props.link} target="_blank"> 
       <Card className={classes.card}>
         <CardHeader className={classes.header}
           title={this.props.name}

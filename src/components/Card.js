@@ -55,7 +55,7 @@ class Card extends Component {
         className="flip-card card-container "
         ref={this.mainRef}
       >
-        <div className="flip-card-inner unflipped shadow" ref={this.cardRef}>
+        <div className="flip-card-inner unflipped " ref={this.cardRef}>
           <div className="flip-card-front shadow" onClick={this.flipForward}> 
             <div className="job-title">
               <span>Full Stack Software Engineer</span>
@@ -75,13 +75,13 @@ class Card extends Component {
             <div className="bottom-section">
               <span className="email">
                 {" "}
-                <a href="mailto:ali.shaikh@sydney.edu.au">
+                <a href="mailto:ali.shaikh@sydney.edu.au" target="_blank">
                   <i class="fas fa-envelope contact-icon" />
                 </a>
               </span>
 
               <span className="linkedin">
-                <a href="https://www.linkedin.com/in/shaikhspeare/">
+                <a href="https://www.linkedin.com/in/shaikhspeare/" target="_blank">
                   <i className="fab fa-linkedin contact-icon" />
                 </a>
               </span>
