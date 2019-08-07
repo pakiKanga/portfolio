@@ -1,16 +1,29 @@
-import React, { Component } from 'react';
-import './../css/summary.css'
-import logo from './../images/usyd.jpg';
+import React, { Component } from "react";
+import "./../css/summary.css";
+import logo from "./../images/usyd.jpg";
 class Summary extends Component {
   render() {
     return (
       <div className="summary-container">
-        <h1 className="summary-intro">Hi, I'm Ali. </h1>
-        <h2 className="content">I'm a software engineer. Here are some of the things that I've done so far.</h2>
+        <div className="summary-intro">
+          <span>Hi, I'm Ali. </span>
+        </div>
 
-        <h3 className="current-occupation">
-        <strong>Currently: </strong> University of Sydney (Software Developer) </h3>
-        <img className="logo" src={logo}></img>
+        <div className="summary-content">
+          <span>
+            I'm a software engineer with strong roots in design.
+          </span>
+        </div>
+
+        <div className="current-occupation">
+          <span>
+            <strong>Currently: </strong> University of Sydney (Software
+            Developer){" "}
+          </span> <br></br>
+          <img className="logo" src={logo} />
+
+        </div>
+
       </div>
     );
   }
