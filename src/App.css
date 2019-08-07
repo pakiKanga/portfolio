@@ -27,6 +27,10 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .name-header {
   text-align: center;
   text-transform: uppercase;
@@ -194,3 +198,22 @@ body {
     transform: rotateY(0deg);
   }
 }
+
+.DontUseIE {
+  background-color: #00ACC1;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+.IEContent {
+  background-color: #00ACC1;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+

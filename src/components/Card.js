@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./../css/contact.css";
 import Projects from "./Projects";
 import Summary from "./Summary";
-
+import ContactInfo from "./ContactInfo"
 class Card extends Component {
   constructor(props) {
     super(props);
@@ -41,22 +41,39 @@ class Card extends Component {
   }
   render() {
     console.log(this.state.flipped);
-    const showProjects = this.state.flipped ? 
-    
-    <div>
-       <p className="featured-projects">FEATURED PROJECTS</p>
-      <Projects />
-      <div className="return-home" onClick={this.flipBackward}>
-              <i class="fas fa-chevron-circle-left contact-icon"></i>
+    const isIE = /*@cc_on!@*/ false || !!document.documentMode;
+    if (isIE) {
+      return (
+        <div>
+          <div className="IEContent">
+            <Summary />
+            <div>
+              <p className="featured-projects align-center">FEATURED PROJECTS</p>
+              <h4 className="align-center"><strong>Note: This website is not compatible with IE. Please use Chrome, Safari or Firefox!</strong></h4>
+
+              <Projects />
+              <ContactInfo />
+
+            </div>
+          </div>
+        </div>
+      );
+    }
+    const showProjects = this.state.flipped ? (
+      <div>
+        <p className="featured-projects">FEATURED PROJECTS</p>
+        <Projects />
+        <div className="return-home" onClick={this.flipBackward}>
+          <i class="fas fa-chevron-circle-left contact-icon" />
+        </div>
       </div>
-    </div> : "";
+    ) : (
+      ""
+    );
     return (
-      <div
-        className="flip-card card-container "
-        ref={this.mainRef}
-      >
+      <div className="flip-card card-container " ref={this.mainRef}>
         <div className="flip-card-inner unflipped " ref={this.cardRef}>
-          <div className="flip-card-front shadow" onClick={this.flipForward}> 
+          <div className="flip-card-front shadow" onClick={this.flipForward}>
             <div className="job-title">
               <span>Full Stack Software Engineer</span>
             </div>
@@ -81,7 +98,10 @@ class Card extends Component {
               </span>
 
               <span className="linkedin">
-                <a href="https://www.linkedin.com/in/shaikhspeare/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/shaikhspeare/"
+                  target="_blank"
+                >
                   <i className="fab fa-linkedin contact-icon" />
                 </a>
               </span>
@@ -90,7 +110,6 @@ class Card extends Component {
           <div className="flip-card-back" ref={this.cardBack}>
             <Summary />
             {showProjects}
-           
           </div>
         </div>
       </div>
