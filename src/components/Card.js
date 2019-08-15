@@ -112,6 +112,10 @@ class Card extends Component {
             {showProjects}
           </div>
         </div>
+        <div className="tap-indicator">
+          <span>Tap Me</span>
+        </div>
+
       </div>
     );
   }
