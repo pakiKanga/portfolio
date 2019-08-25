@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./../css/contact.css";
+
+
 import Projects from "./Projects";
 import Summary from "./Summary";
 import ContactInfo from "./ContactInfo"
@@ -70,8 +72,16 @@ class Card extends Component {
     ) : (
       ""
     );
+
+    const tapIndicator = this.state.flipped ? (
+      ""
+    ) : (
+      <div className="tap-indicator">
+      <span>Tap Me</span>
+      </div>
+    );
     return (
-      <div className="flip-card card-container " ref={this.mainRef}>
+      <div className="flip-card card-container cbutton cbutton--effect-tamara" ref={this.mainRef}>
         <div className="flip-card-inner unflipped " ref={this.cardRef}>
           <div className="flip-card-front shadow" onClick={this.flipForward}>
             <div className="job-title">
@@ -112,9 +122,7 @@ class Card extends Component {
             {showProjects}
           </div>
         </div>
-        <div className="tap-indicator">
-          <span>Tap Me</span>
-        </div>
+          {tapIndicator}
 
       </div>
     );
