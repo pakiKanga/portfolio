@@ -4,16 +4,14 @@
             "projectName": "HeyFam", 
             "summary":"Helps you find the best places to meet up with friends using a mid-point algorithm. Simply enter your locations and hit submit.", 
             "tech": "Materialise | Flask | MySQL", 
-            "image": "HeyFam", 
-            "link": "https://heyfam.io"
-      },
+            "image": "HeyFam" 
+           },
       {
             "id": 2, 
             "projectName": "Meetup Point", 
             "summary": "Similar to the previous concept, Meetup Point helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
             "tech": "React | Node | MySQL", 
-            "image": "MeetupPoint",
-            "link": "http://13.211.93.157"
+            "image": "MeetupPoint"
       },
       {
             "id": 3, 
@@ -26,17 +24,16 @@
       {
             "id": 4, 
             "projectName": "Application Verification System", 
-            "summary": "Web form system built for the Pakistani Consulate. Applicants can fill and submit forms which are administrated by different tiers of administration. Includes support for file upload & mobile responsive", 
+            "summary": "Web form system built for the Pakistani Consulate. Applicants can fill and submit forms which are administrated by different tiers of administration. Includes support for file upload & mobile responsive.", 
             "tech": "Materialise | Flask | MySQL",
             "image": "consulate", 
             "link": "http://pakikanga.pythonanywhere.com"
       },
       {
             "id": 5, 
-            "projectName": "This Portfolio", 
-            "summary": "Easy to maintain portfolio, I only need to update a JSON file which is conditionally rendered by React.", 
-            "image": "shaikh", 
-            "tech": "React | Bootstrap",
-            "link:": "https://shaikhspeare.info"
+            "projectName": "Campus Maps", 
+            "summary": "Developed a prototype version of campus maps for the university to significantly improve student experience.", 
+            "image": "maps", 
+            "tech": "React | ExpressJS"
       }
 ]

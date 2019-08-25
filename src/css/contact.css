@@ -30,6 +30,10 @@
   .contact-icon {
     padding-left: 20px;
     font-size: 48px;
+    color: #0099ff;
+  }
+
+  .white {
     color: white;
   }
   
@@ -42,14 +46,25 @@
     .interest-message {
       font-size: 18px;
     }
+
 }
 
 .featured-projects {
   font-size: 24px;
   font-family: "Nunito", sans-serif;
+  color: black;
+  padding-top: 30px;
 }
 
 .return-home {
   margin-bottom: 40px;
   cursor: pointer;
+  color: black;
+}
+
+.waves {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
