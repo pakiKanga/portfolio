@@ -28,4 +28,16 @@
 
   a:hover, a:visited, a:link, a:active {
    text-decoration: none !important;
-}
+
+
+  }
+
+  svg { 
+    margin-top: auto;
+  }
+
+  .bottom-wave {
+    width: 100vw;
+    height: 10vh;
+    align-self: flex-end;
+  }

@@ -1,8 +1,9 @@
+@import "~animate.css/animate.css";
+
+
 .contact-container {
     display: flex;
-    background-color: #0052CC;
-    color: white;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    color: black;
 
 }
 
