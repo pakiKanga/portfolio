@@ -2,8 +2,9 @@
 
 
 .contact-container {
+    background-color: #004CFF;
     display: flex;
-    color: black;
+    color: white;
 
 }
 
@@ -19,6 +20,7 @@
   }
 
   .interest-message {
+    font-family: "Nunito", sans-serif;
     font-size: 32px;
   }
 

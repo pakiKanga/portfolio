@@ -5,7 +5,9 @@ import "./../css/contact.css";
 import Projects from "./Projects";
 import Summary from "./Summary";
 import ContactInfo from "./ContactInfo"
-
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+ 
 class Card extends Component {
   constructor(props) {
     super(props);
@@ -56,7 +58,7 @@ class Card extends Component {
     if (isIE) {
       return (
         <div>
-          <div className="IEContent">
+          <div id="featured-projects" className="IEContent">
             <Summary />
             <div>
               <p className="featured-projects align-center">FEATURED PROJECTS</p>
@@ -71,13 +73,16 @@ class Card extends Component {
       );
     }
     const showProjects = this.state.flipped ? (
-      <div>
+
+      <div name="featured-projects">
+              
         <p className="featured-projects">FEATURED PROJECTS</p>
         <Projects />
         <div className="return-home" onClick={this.flipBackward}>
           <i class="fas fa-chevron-circle-left contact-icon" />
         </div>
         <ContactInfo />
+ 
 
       </div>
     ) : (

@@ -5,7 +5,7 @@ class ContactInfo extends Component {
   render() {
     return (
       <div className="contact-container">
-
+          
           <div className="interest-container">
             <span className="interest-message">Need something? Get in touch.</span>
           </div>

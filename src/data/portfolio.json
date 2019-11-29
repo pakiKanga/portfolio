@@ -1,16 +1,16 @@
 [
       {
             "id": 1,
-            "projectName": "HeyFam", 
-            "summary":"Helps you find the best places to meet up with friends using a mid-point algorithm. Simply enter your locations and hit submit.", 
-            "tech": "Materialise | Flask | MySQL", 
-            "image": "HeyFam" 
+            "projectName": "TutorNow", 
+            "summary":"Tutoring platform which matches tutors and students by multiple variables including proximity and preferences", 
+            "tech": "React | NodeJS | SQL", 
+            "image": "tutornow2" 
            },
       {
             "id": 2, 
-            "projectName": "Meetup Point", 
-            "summary": "Similar to the previous concept, Meetup Point helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
-            "tech": "React | Node | MySQL", 
+            "projectName": "HeyFam", 
+            "summary": "HeyFam helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
+            "tech": "React | Node | SQL", 
             "image": "MeetupPoint"
       },
       {
