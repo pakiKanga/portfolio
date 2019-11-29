@@ -79,15 +79,6 @@ class Summary extends Component {
     // this.el refers to the <span> in the render() method
     console.log(this.el);
     this.typed = new Typed(this.el, options);
-
-    // const summary = this.summaryRef.current.childNodes;
-    // console.log(summary);
-    // for (var i = 0; i < summary.length; i++) {
-    //   summary[i].current.toggle("animated");
-    //   summary[i].current.toggle("bounceInLeft");
-      
-    // }
-
   }
 
   componentWillUnmount() {
@@ -106,7 +97,7 @@ class Summary extends Component {
     : (<span>Flip Me</span>)
 
     return (
-      <div className="summary-container">
+      <div className="summary-container" style={{display: this.props.flipped ? '' : 'none'}}>
         <div className="summary-intro">
           <span
             style={{ whiteSpace: 'pre' }}
