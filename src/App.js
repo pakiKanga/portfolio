@@ -4,6 +4,7 @@ import ContactInfo from './components/ContactInfo';
 
 
 import logo from './logo.svg';
+import card from './images/businesscard.svg'
 import './App.css';
 import './css/bootstrap.css'
 

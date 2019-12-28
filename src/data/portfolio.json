@@ -2,7 +2,7 @@
       {
             "id": 1,
             "projectName": "TutorNow", 
-            "summary":"Tutoring platform which matches tutors and students by multiple variables including proximity and preferences", 
+            "summary":"Tutoring platform which connects students with new tutors by proximity.", 
             "tech": "React | NodeJS | SQL", 
             "image": "tutornow2" 
            },
