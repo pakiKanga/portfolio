@@ -2,25 +2,33 @@
 
 
 .summary-container {
-    width: 100%;
-    height: 100vh;
+
+    min-height: 100vh;
+    max-height: 100vh;
+    padding-left: 20px;
+    padding-top: 40px;
     color: black;
-    padding: 40px 0px 20px 20px;
     text-align: left;
     font-size: 4.5vw;
     font-family: "Nunito", sans-serif;
     background-color: #0B1D51;
     color: white;
-    position: relative;
 }
-  
+
+.top-wave {
+  position: absolute;
+  z-index: 0;
+  fill: white;
+  margin-left: auto;
+  margin-right: 0;
+  color: red;
+  width: 100%;
+}
 .name-title {
   font-weight: bolder;
   text-align:left;
 }
-  
-
-  
+    
 #clearfix {
   clear: both;
 }
@@ -33,14 +41,15 @@
 
 
 .summary-intro {
-  font-size: 4.5vw;
+  font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
 }
 
 .summary-content {
   font-family: "Muli", sans-serif;
   font-weight: 800;
-  font-size: 3vw;
+  font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  position: absolute;
 }
 
 .summary-list {

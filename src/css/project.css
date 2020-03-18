@@ -1,43 +1,99 @@
+.content {
+  width: 60vw;
+}
 
-  .content {
-    width: 60vw
-  }
+.sidebar-projects {
+  list-style: none;
+  font-size: 24px;
+  color: white;
+  padding: 0px;
+  background-color: #0097a7;
+  height: 100%;
+}
 
-  .sidebar-projects {
-    list-style: none;
-    font-size: 24px;
-    color: white;
-    padding: 0px;
-    background-color: #0097A7;
-    height: 100%;
+.project-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(207,216,220 ,1);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+}
 
-  }
+.project-card {
+  width: 390px;
+  height: 300px;
+  max-width: 390px;
+  max-height: 300px;
+  flex-basis: 0;
 
-  .projects-container {
-    margin-bottom: 10vh;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+}
 
-  .project {
-    margin: 20px;
-    font-size: 48px;
-    width: fit-content;
-  }
+.project-info {
+  width: 390px;
+  height: 300px;
+  max-width: 390px;
+  max-height: 300px;
+  background-color: red;
+}
 
-  a:hover, a:visited, a:link, a:active {
-   text-decoration: none !important;
+svg {
+  margin-top: auto;
+}
+
+.bottom-wave {
+  width: 100vw;
+  height: 10vh;
+  align-self: flex-end;
+}
+
+.project-summary {
+  position: absolute;
+  text-align: center;
+  width: 390px;
+  height: 300px;
+}
+
+.project-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  margin-top: 40px;
+}
+
+.project-description {
+
+  font-size: 14px;
+}
+
+.learnMore {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 0;
+  padding: 10px 50px;
+  font-size: 18px;
+  outline: 2px solid #c62828;
+  position: relative;
+  top: 50px;
+
+  transition: background-color 0.5s ease;
+  transition: color 0.5s ease;
 
 
-  }
+}
 
-  svg { 
-    margin-top: auto;
-  }
+.learnMore:hover {
+  background-color: #c62828;
+  color: white;
+}
 
-  .bottom-wave {
-    width: 100vw;
-    height: 10vh;
-    align-self: flex-end;
-  }
+.featured-projects-header {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+}

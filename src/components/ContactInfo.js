@@ -16,7 +16,7 @@ class ContactInfo extends Component {
             </a>
               </li>
           <li>
-            <a href="mailto:ali.shaikh@sydney.edu.au">
+            <a href="mailto:ali@infinibit.com.au">
               <i class="fas fa-envelope contact-icon white"></i>
               </a>
           </li>

@@ -59,7 +59,8 @@
   font-family: "Nunito", sans-serif;
   color: black;
   padding-top: 30px;
-  text-align: center;
+  text-align: left;
+  margin-left: 200px;
 }
 
 .return-home {

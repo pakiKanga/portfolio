@@ -4,36 +4,38 @@
             "projectName": "TutorNow", 
             "summary":"Tutoring platform which connects students with new tutors by proximity.", 
             "tech": "React | NodeJS | SQL", 
-            "image": "tutornow2" 
+            "image": "tutornow3" 
            },
-      {
+           {
             "id": 2, 
-            "projectName": "HeyFam", 
-            "summary": "HeyFam helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
-            "tech": "React | Node | SQL", 
-            "image": "MeetupPoint"
-      },
-      {
-            "id": 3, 
-            "projectName": "SpaceCraft VR", 
-            "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system.", 
-            "tech": "Virtual Reality | C++ | Unreal Engine",
-            "image": "SpaceVR", 
-            "link": "https://drive.google.com/file/d/1X8MVCmwR_pD-lhWhr9C0Hn_6CSiVg4HC/view?usp=sharing"
-      },
-      {
-            "id": 4, 
             "projectName": "Application Verification System", 
             "summary": "Web form system built for the Pakistani Consulate. Applicants can fill and submit forms which are administrated by different tiers of administration. Includes support for file upload & mobile responsive.", 
             "tech": "Materialise | Flask | MySQL",
             "image": "consulate", 
             "link": "http://pakikanga.pythonanywhere.com"
       },
+
+      {
+            "id": 3, 
+            "projectName": "SpaceCraft VR", 
+            "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system.", 
+            "tech": "Virtual Reality | C++ | Unreal Engine",
+            "image": "spaceVR2", 
+            "link": "https://drive.google.com/file/d/1X8MVCmwR_pD-lhWhr9C0Hn_6CSiVg4HC/view?usp=sharing"
+      },
+      {
+            "id": 4, 
+            "projectName": "HeyFam", 
+            "summary": "HeyFam helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
+            "tech": "React | Node | SQL", 
+            "image": "MeetupPoint3"
+      },
+
       {
             "id": 5, 
             "projectName": "Campus Maps", 
             "summary": "Developed a prototype version of campus maps for the university to significantly improve student experience.", 
-            "image": "maps", 
+            "image": "usydmock", 
             "tech": "React | ExpressJS"
       }
 ]

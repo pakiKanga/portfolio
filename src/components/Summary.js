@@ -38,8 +38,6 @@ class Summary extends Component {
       }
     }
     this.prev = window.scrollY;
-
-    console.log(window);
   }
 
   scrollToTop = () => {
@@ -59,10 +57,7 @@ class Summary extends Component {
   };
   componentDidMount() {
     this.prev = window.scrollY;
-    // window.addEventListener('scroll', e => this.handleScroll(e));
 
-    // If you want to pass more options as props, simply add
-    // your desired props to this destructuring assignment.
     const strings = ["Hi, I'm Ali.", "I'm a software engineer."];
     console.log(strings);
     // You can pass other options here, such as typing speed, back speed, etc.
@@ -74,7 +69,6 @@ class Summary extends Component {
       loop: true
     };
     // this.el refers to the <span> in the render() method
-    console.log(this.el);
     this.typed = new Typed(this.el, options);
   }
 
@@ -84,9 +78,8 @@ class Summary extends Component {
 
   render() {
     return (
-      <div
-        className="summary-container"
-      >
+      <div className="summary-container">
+       
         <div className="summary-intro">
           <span
             style={{ whiteSpace: "pre" }}
