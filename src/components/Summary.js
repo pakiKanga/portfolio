@@ -1,16 +1,11 @@
 import React, { Component } from "react";
 import "./../css/summary.css";
-import logo from "./../images/usyd.jpg";
 import Typed from "typed.js";
 
 import * as Scroll from "react-scroll";
 
 // Or Access Link,Element,etc as follows
-let Link = Scroll.Link;
-let Element = Scroll.Element;
-let Events = Scroll.Events;
 let scroll = Scroll.animateScroll;
-let scrollSpy = Scroll.scrollSpy;
 var scroller = Scroll.scroller;
 
 class Summary extends Component {

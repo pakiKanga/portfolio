@@ -1,11 +1,7 @@
 import React, { Component } from "react";
-import Card from "./components/Card.js";
 import ContactInfo from "./components/ContactInfo";
 import Projects from "./components/Projects";
 import Summary from "./components/Summary";
-
-import logo from "./logo.svg";
-import card from "./images/businesscard.svg";
 import "./App.css";
 import "./css/bootstrap.css";
 

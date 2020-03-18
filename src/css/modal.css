@@ -1,0 +1,43 @@
+.modalContainer {
+}
+
+.modalContainer h1 {
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.modalContainer h2 {
+    font-size: 18px;
+    width: 50%;
+}
+
+.closeWindow {
+    position: absolute;
+    overflow: hidden;
+    right: 30px;
+    bottom: 10px;
+    
+}
+
+.imageGallery {
+    width: 700px;
+    height: 200px;
+}
+
+.imageGallery img {
+    width: 700px;
+    height: 200px;
+}
+
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: all 500ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
