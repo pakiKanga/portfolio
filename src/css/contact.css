@@ -2,9 +2,10 @@
 
 
 .contact-container {
-    background-color: #004CFF;
+    background-color: #0B1D51;
     display: flex;
     color: white;
+    padding-bottom: 5px;
 
 }
 
