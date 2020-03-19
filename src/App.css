@@ -1,5 +1,6 @@
 body {
   font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
   background-color: #26A69A;
   background-repeat: no-repeat;
   background-position: center;

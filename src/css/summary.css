@@ -9,10 +9,19 @@
     padding-top: 40px;
     color: black;
     text-align: left;
-    font-size: 4.5vw;
     font-family: "Nunito", sans-serif;
     background-color: #0B1D51;
     color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.summary-intro {
+  margin-top: 10%;
+  font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-weight: bold;
+  text-align: center;
 }
 
 .top-wave {
@@ -40,11 +49,11 @@
 }
 
 
-.summary-intro {
-  font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: bold;
-}
 
+
+#name {
+  color: #E64A19;
+}
 .summary-content {
   font-family: "Muli", sans-serif;
   font-weight: 800;
@@ -69,6 +78,7 @@
 
 .scroll-down-icon {
   color: white;
+  font-size: 120px;
 }
 
 .scroll-down-icon:hover {

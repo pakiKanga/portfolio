@@ -15,9 +15,9 @@ class Projects extends Component {
     return (
         <div className="project-container">
         <h1 className="featured-projects-header">
-        FEATURED PROJECTS
+        <Fade left big>FEATURED PROJECTS</Fade>
           </h1>
-          <Fade top >
+          <Fade bottom >
           {projectList}
           </Fade>
         </div>

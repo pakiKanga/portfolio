@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import "./../css/summary.css";
-import Typed from "typed.js";
-
 import * as Scroll from "react-scroll";
 
 // Or Access Link,Element,etc as follows
@@ -50,47 +48,13 @@ class Summary extends Component {
       smooth: true
     });
   };
-  componentDidMount() {
-    this.prev = window.scrollY;
-
-    const strings = ["Hi, I'm Ali.", "I'm a software engineer."];
-    console.log(strings);
-    // You can pass other options here, such as typing speed, back speed, etc.
-    const options = {
-      strings: strings,
-      typeSpeed: 50,
-      backSpeed: 50,
-      backDelay: 1000,
-      loop: true
-    };
-    // this.el refers to the <span> in the render() method
-    this.typed = new Typed(this.el, options);
-  }
-
-  componentWillUnmount() {
-    this.typed.destroy();
-  }
 
   render() {
     return (
       <div className="summary-container">
        
         <div className="summary-intro">
-          <span
-            style={{ whiteSpace: "pre" }}
-            ref={el => {
-              this.el = el;
-            }}
-          />
-        </div>
-
-        <div className="summary-content">
-          <ul className="summary-list" ref={this.summaryRef}>
-            <li className="animated bounceInLeft delay-1s faster">Design.</li>
-            <li className="animated bounceInLeft delay-1s fast">DevOps.</li>
-            <li className="animated bounceInLeft delay-1s slow">Front End.</li>
-            <li className="animated bounceInLeft delay-1s slower">Back End.</li>
-          </ul>
+          Hi, I'm <span id="name">Ali Shaikh.</span> <br />I'm a full-stack software developer.
         </div>
 
         <div className="bottom-container">
