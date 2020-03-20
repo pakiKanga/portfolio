@@ -51,14 +51,14 @@ class Summary extends Component {
   };
 
   componentDidMount() {
-    this.setState({mounted: true});
+    this.setState({textLoaded: true});
   }
 
   render() {
     return (
       <div className="summaryParentContainer">
         <div className="summary-container">
-          <Fade top>
+          <Fade top when={this.state.textLoaded === true}>
             <div className="summary-intro">
               Hi, I'm <span id="name">Ali Shaikh.</span> <br />
               I'm a full-stack software developer.
