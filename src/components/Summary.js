@@ -65,9 +65,9 @@ class Summary extends Component {
             </div>
           </Fade>
             <div className="imageContainer">
-            <Fade right when={this.state.mounted}>
+            <Fade right when={this.state.imageLoaded === true}>
 
-              <img alt="" src={require("./wordcloud/res_9.png")} />
+              <img onLoad={() => this.setState({imageLoaded: true})} alt="" src={require("./wordcloud/res_9.png")} />
               </Fade>
 
             </div>
