@@ -54,7 +54,7 @@ class Summary extends Component {
       <div className="summary-container">
        
         <div className="summary-intro">
-          Hi, I'm <span id="name">Ali Shaikh.</span> <br />I'm a full-stack software developer.
+          Hi, I'm <span id="name">Ali Shaikh.</span> <br />I'm a full-stack software developer
         </div>
         <div className="imageContainer">
           <img alt="" src={require('./wordcloud/res_9.png')} />
