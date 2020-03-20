@@ -1,20 +1,18 @@
 @import "~animate.css/animate.css";
 
-
 .summary-container {
+  min-height: 85vh;
 
-    min-height: 85vh;
-
-    max-height: 100%;
-    padding-top: 40px;
-    color: black;
-    text-align: left;
-    font-family: "Nunito", sans-serif;
-    background-color: #0B1D51;
-    color: white;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+  max-height: 100%;
+  padding-top: 40px;
+  color: black;
+  text-align: left;
+  font-family: "Nunito", sans-serif;
+  background-color: #0b1d51;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .summary-intro {
@@ -37,9 +35,9 @@
 }
 .name-title {
   font-weight: bolder;
-  text-align:left;
+  text-align: left;
 }
-    
+
 #clearfix {
   clear: both;
 }
@@ -51,7 +49,7 @@
 }
 
 #name {
-  color: #E64A19;
+  color: #e64a19;
 }
 .summary-content {
   font-family: "Muli", sans-serif;
@@ -69,7 +67,7 @@
 
 .bottom-container {
   min-height: 15vh;
-  background-color: #0B1D51;
+  background-color: #0b1d51;
   width: 100%;
   text-align: center;
 }
@@ -85,18 +83,25 @@
 }
 
 @media only screen and (max-width: 1096px) {
- .summary-container {
-   flex-direction: column;
- }
+  .summary-container {
+    flex-direction: column;
+  }
 
- .imageContainer {
-  width: 450px;
-}
+  .imageContainer {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .summary-container {
     flex-direction: column;
   }
+}
 
- }
+@media only screen and (max-width: 320px) {
+
+  .imageContainer {
+    width: 80vw;
+  }
+}
+

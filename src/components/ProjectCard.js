@@ -22,7 +22,7 @@ const activeColour = "#FAFAFA";
 const inactiveColour = "#000";
 const ProjectDiv = styled.div`
   display: inline-block;
-  width: 390px;
+  width: 100vw;
   height: 300px;
   max-width: 390px;
   max-height: 300px;
