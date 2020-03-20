@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./../css/summary.css";
 import * as Scroll from "react-scroll";
+import Fade from "react-reveal/Fade";
 
 // Or Access Link,Element,etc as follows
 let scroll = Scroll.animateScroll;
@@ -51,13 +52,19 @@ class Summary extends Component {
 
   render() {
     return (
-      <div className="summary-container">
-       
-        <div className="summary-intro">
-          Hi, I'm <span id="name">Ali Shaikh.</span> <br />I'm a full-stack software developer
-        </div>
-        <div className="imageContainer">
-          <img alt="" src={require('./wordcloud/res_9.png')} />
+      <div>
+        <div className="summary-container">
+          <Fade top>
+            <div className="summary-intro">
+              Hi, I'm <span id="name">Ali Shaikh.</span> <br />
+              I'm a full-stack software developer.
+            </div>
+          </Fade>
+          <Fade right>
+            <div className="imageContainer">
+              <img alt="" src={require("./wordcloud/res_9.png")} />
+            </div>
+          </Fade>
         </div>
         <div className="bottom-container">
           <a href="#" onClick={this.scrollDown}>
