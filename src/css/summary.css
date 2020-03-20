@@ -34,6 +34,7 @@
   margin: 0 auto;
   width: 640px;
   height: auto;
+  overflow: hidden;
 }
 
 .imageContainer img {

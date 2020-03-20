@@ -60,11 +60,13 @@ class Summary extends Component {
               I'm a full-stack software developer.
             </div>
           </Fade>
-          <Fade right>
             <div className="imageContainer">
+            <Fade right>
+
               <img alt="" src={require("./wordcloud/res_9.png")} />
+              </Fade>
+
             </div>
-          </Fade>
         </div>
         <div className="bottom-container">
           <a href="#" onClick={this.scrollDown}>
