@@ -50,6 +50,10 @@ class Summary extends Component {
     });
   };
 
+  componentDidMount() {
+    this.setState({mounted: true});
+  }
+
   render() {
     return (
       <div className="summaryParentContainer">
@@ -61,7 +65,7 @@ class Summary extends Component {
             </div>
           </Fade>
             <div className="imageContainer">
-            <Fade right>
+            <Fade right when={this.state.mounted}>
 
               <img alt="" src={require("./wordcloud/res_9.png")} />
               </Fade>
