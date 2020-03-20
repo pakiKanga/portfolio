@@ -34,18 +34,6 @@ const ProjectDiv = styled.div`
   cursor: pointer;
 `;
 
-const images = [
-  {
-    original: "https://picsum.photos/id/1018/1000/600/"
-  },
-  {
-    original: "https://picsum.photos/id/1015/1000/600/"
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/"
-  }
-];
-
 class ProjectCard extends React.Component {
   componentWillMount() {
     this.setState({ hover: false, colour: activeColour });
@@ -67,6 +55,12 @@ class ProjectCard extends React.Component {
     this.setState({ modalOpen: false });
   };
   render() {
+    let images;
+    if (this.props.modalImages) {
+      images = this.props.modalImages.map(image => {
+        return { original: require("./../images/" + image) };
+      });
+    }
     return (
       <>
         <ProjectDiv
@@ -109,14 +103,19 @@ class ProjectCard extends React.Component {
               className="closeWindow"
               alt="close"
               src={require("./../images/close_window.png")}
-            />{" "}
+            />
           </button>
-
           <div className="modalContainer">
             <div className="imageGallery">
-              {/* {this.props.modalImages && (
-                  <img alt=""src={require("./../images/" + this.props.modalImages[0])} />
-                )} */}
+              {images && (
+                <ImageGallery
+                  lazyLoad={true}
+                  items={images}
+                  showPlayButton={false}
+                  showFullscreenButton={false}
+                  showThumbnails={false}
+                />
+              )}
             </div>
             <h1 className="modalHeader">{this.props.name}</h1>
             <h2 className="modalSummary">{this.props.description}</h2>

@@ -2,7 +2,7 @@
       {
             "id": 1,
             "projectName": "TutorNow", 
-            "summary":"Tutoring platform which connects students with new tutors by proximity.", 
+            "summary":"TutorNow is a tutoring platform which connects students with the best tutors by proximity. It streamlines the process of acquiring students through an automated messaging system.", 
             "tech": "React | NodeJS | SQL", 
             "image": "tutornow3",
             "modalImages": ["tutornow_signup.png", "tutornow_students.png"] 
@@ -13,6 +13,7 @@
             "summary": "Web form system built for the Pakistani Consulate. Applicants can fill and submit forms which are administrated by different tiers of administration. Includes support for file upload & mobile responsive.", 
             "tech": "Materialise | Flask | MySQL",
             "image": "consulate", 
+            "modalImages": ["consulate.PNG"],
             "link": "http://pakikanga.pythonanywhere.com"
       },
 
@@ -22,12 +23,13 @@
             "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system.", 
             "tech": "Virtual Reality | C++ | Unreal Engine",
             "image": "spaceVR2", 
+            "modalImages": ["spacevr_1.png", "spacevr_2.png", "spacevr_3.PNG"],
             "link": "https://drive.google.com/file/d/1X8MVCmwR_pD-lhWhr9C0Hn_6CSiVg4HC/view?usp=sharing"
       },
       {
             "id": 4, 
             "projectName": "HeyFam", 
-            "summary": "HeyFam helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes.", 
+            "summary": "HeyFam helps you find the best places to meet up with friends using a distance matrix algorithm based on transport routes. Users can join a session and enter their own locations. The system will then find the most optimal location for the party to meet.", 
             "tech": "React | Node | SQL", 
             "image": "MeetupPoint3"
       },
@@ -35,8 +37,9 @@
       {
             "id": 5, 
             "projectName": "Campus Maps", 
-            "summary": "Developed a prototype version of campus maps for the university to significantly improve student experience.", 
+            "summary": "Developed a prototype version of campus maps for the university to significantly improve student experience. It's aim is to be completely web responsive and to provide more relevant data to students.", 
             "image": "usydmock", 
+            "modalImages": ["campusmaps_1.png"],
             "tech": "React | ExpressJS"
       }
 ]

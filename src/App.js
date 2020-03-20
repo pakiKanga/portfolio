@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ContactInfo from "./components/ContactInfo";
 import Projects from "./components/Projects";
 import Summary from "./components/Summary";
+import About from "./components/About";
 import "./App.css";
 import "./css/bootstrap.css";
 
