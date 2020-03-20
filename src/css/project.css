@@ -12,7 +12,8 @@
 }
 
 .project-container {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
   background-color: rgba(207,216,220 ,1);
   padding: 20px;
