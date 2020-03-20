@@ -52,7 +52,7 @@ class Summary extends Component {
 
   render() {
     return (
-      <div>
+      <div className="summaryParentContainer">
         <div className="summary-container">
           <Fade top>
             <div className="summary-intro">

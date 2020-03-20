@@ -1,10 +1,8 @@
 @import "~animate.css/animate.css";
 
 .summary-container {
-  min-height: 85vh;
 
-  max-height: 100%;
-  padding-top: 40px;
+  max-height: 85vh;
   color: black;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -15,6 +13,15 @@
   justify-content: flex-start;
 }
 
+.summaryParentContainer {
+  background-color: #0b1d51;
+
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly
+}
 .summary-intro {
   margin-top: 10%;
   font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
