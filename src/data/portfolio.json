@@ -20,7 +20,7 @@
       {
             "id": 3, 
             "projectName": "SpaceCraft VR", 
-            "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system.", 
+            "summary": "As part of our university capstone project, we built a virtual reality simulation of the solar system. This was built using Unreal Engine and supports all standard VR systems such as the Oculus.", 
             "tech": "Virtual Reality | C++ | Unreal Engine",
             "image": "spaceVR2", 
             "modalImages": ["spacevr_1.png", "spacevr_2.png", "spacevr_3.PNG"],

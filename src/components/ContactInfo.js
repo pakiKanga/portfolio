@@ -11,12 +11,12 @@ class ContactInfo extends Component {
           </div>
           <ul className="contact-list">
           <li>
-            <a href="https://www.linkedin.com/in/shaikhspeare/" target="_blank">
+            <a href="https://www.linkedin.com/in/shaikhspeare/" target="_blank" rel="noopener noreferrer">
               <i class="fab fa-linkedin contact-icon white"></i>
             </a>
               </li>
           <li>
-            <a href="mailto:ali@infinibit.com.au" target="_blank">
+            <a href="mailto:ali@infinibit.com.au" target="_blank" rel="noopener noreferrer">
               <i class="fas fa-envelope contact-icon white"></i>
               </a>
           </li>

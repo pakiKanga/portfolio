@@ -22,12 +22,27 @@
   flex-direction: column;
   justify-content: space-evenly
 }
-.summary-intro {
+.summary-intro-container {
   margin-top: 10%;
   font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  width: 70%;
+}
+
+
+.secondSummary {
+  margin-top: 10%;
+  padding-left: 50px;
+  text-align: left;
+  font-weight: normal;
+  font-size: calc(22px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+
 }
 
 .imageContainer {
@@ -35,6 +50,7 @@
   width: 640px;
   height: auto;
   overflow: hidden;
+  padding: 20px;
 }
 
 .imageContainer img {
@@ -88,6 +104,12 @@
 .scroll-down-icon:hover {
   color: orange;
   transition: 1s;
+}
+
+.scrollDownButton {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
 }
 
 @media only screen and (max-width: 1096px) {

@@ -51,7 +51,7 @@ class Summary extends Component {
   };
 
   componentDidMount() {
-    this.setState({textLoaded: true});
+    this.setState({ textLoaded: true });
   }
 
   render() {
@@ -59,23 +59,28 @@ class Summary extends Component {
       <div className="summaryParentContainer">
         <div className="summary-container">
           <Fade top when={this.state.textLoaded === true}>
-            <div className="summary-intro">
-              Hi, I'm <span id="name">Ali Shaikh.</span> <br />
-              I'm a full-stack software developer.
+            <div className="summary-intro-container">
+              <div className="firstSummary">
+                Hi, I'm <span id="name">Ali Shaikh.</span> <br />
+                I'm a full-stack software developer.
+              </div>
+              <div className="secondSummary">I specialise in developing full stack products with a good eye for aesthetics. My skillset includes web development, data analytics/visualisation and graphic design.</div>
             </div>
           </Fade>
-            <div className="imageContainer">
+          <div className="imageContainer">
             <Fade right when={this.state.imageLoaded === true}>
-
-              <img onLoad={() => this.setState({imageLoaded: true})} alt="" src={require("./wordcloud/res_9.png")} />
-              </Fade>
-
-            </div>
+              <img
+                onLoad={() => this.setState({ imageLoaded: true })}
+                alt=""
+                src={require("./wordcloud/res_9.png")}
+              />
+            </Fade>
+          </div>
         </div>
         <div className="bottom-container">
-          <a href="#" onClick={this.scrollDown}>
+          <button className="scrollDownButton" onClick={this.scrollDown}>
             <i className="fas fa-chevron-down scroll-down-icon" />
-          </a>
+          </button>
         </div>
       </div>
     );
