@@ -2,7 +2,6 @@
 
 .summary-container {
 
-  max-height: 85vh;
   color: black;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -23,25 +22,28 @@
   justify-content: space-evenly
 }
 .summary-intro-container {
-  margin-top: 10%;
   font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
+  margin-top: 30px;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-content: flex-start;
-  width: 70%;
+  width: 60%;
 }
 
 
+
 .secondSummary {
-  margin-top: 10%;
+  margin-top: 50px;
   padding-left: 50px;
   text-align: left;
   font-weight: normal;
-  font-size: calc(22px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+ font-size: 28px;
+ width: 80%;
+
 
 }
 
@@ -125,6 +127,14 @@
 @media only screen and (max-width: 800px) {
   .summary-container {
     flex-direction: column;
+  }
+
+  .summary-intro-container {
+    width: 95vw;
+  }
+
+  .secondSummary {
+    width: 100%;
   }
 }
 
