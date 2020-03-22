@@ -1,7 +1,6 @@
 @import "~animate.css/animate.css";
 
 .summary-container {
-
   color: black;
   text-align: left;
   font-family: "Nunito", sans-serif;
@@ -10,46 +9,40 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
+  padding-left: 20px;
 }
 
 .summaryParentContainer {
   background-color: #0b1d51;
-
   min-height: 100vh;
-  max-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly
+  justify-content: space-evenly;
 }
+
 .summary-intro-container {
-  font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+  font-size: 36px;
   font-weight: bold;
   text-align: center;
   margin: 0 auto;
   margin-top: 30px;
-
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   width: 60%;
 }
 
-
-
 .secondSummary {
   margin-top: 50px;
-  padding-left: 50px;
   text-align: left;
   font-weight: normal;
- font-size: 28px;
- width: 80%;
-
-
+  font-size: 24px;
+  width: 80%;
 }
 
 .imageContainer {
   margin: 0 auto;
-  width: 640px;
+  width: 540px;
   height: auto;
   overflow: hidden;
   padding: 20px;
@@ -59,37 +52,14 @@
   max-width: 100%;
   max-height: auto;
 }
-.name-title {
-  font-weight: bolder;
-  text-align: left;
-}
 
-#clearfix {
-  clear: both;
-}
 
-.logo {
-  height: 80px;
-  width: 80px;
-  border-radius: 25px;
-}
-
-#name {
-  color: #e64a19;
-}
 .summary-content {
   font-family: "Muli", sans-serif;
   font-weight: 800;
-  font-size: calc(28px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
   position: absolute;
 }
 
-.summary-list {
-  list-style: none;
-}
-.current-occupation {
-  font-size: 2vw;
-}
 
 .bottom-container {
   min-height: 15vh;
@@ -115,16 +85,10 @@
 }
 
 @media only screen and (max-width: 1096px) {
-  .summary-container {
-    flex-direction: column;
-  }
-
   .imageContainer {
     width: 300px;
   }
-}
 
-@media only screen and (max-width: 800px) {
   .summary-container {
     flex-direction: column;
   }
@@ -135,13 +99,19 @@
 
   .secondSummary {
     width: 100%;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .scroll-down-icon {
+    color: white;
+    font-size: 70px;
   }
 }
 
-@media only screen and (max-width: 320px) {
 
+@media only screen and (max-width: 320px) {
   .imageContainer {
     width: 80vw;
   }
 }
-
