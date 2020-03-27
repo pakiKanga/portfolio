@@ -15,6 +15,7 @@
 
 .modalContainer h2 {
     padding: 0px 20px;
+    font-weight: normal;
     font-size: 18px;
     width: 90%;
 }
@@ -61,7 +62,7 @@
     }
     .modalContainer {
         width: 100vw;
-        height: 100vh;
+        min-height: 100vh;
     }
 
   }
