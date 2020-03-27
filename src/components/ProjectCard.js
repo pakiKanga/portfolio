@@ -101,7 +101,7 @@ class ProjectCard extends React.Component {
             <img
               className="closeWindow"
               alt="close"
-              src={require("./../images/close_window.png")}
+              src={require("./../images/close_icon.png")}
             />
           </button>
           <div className="modalContainer">

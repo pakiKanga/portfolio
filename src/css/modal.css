@@ -1,24 +1,29 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 
 .modalContainer {
+    background-color: #0b1d51;
+
     max-width: 700px;
+    color: white;
 }
 
 .modalContainer h1 {
+    padding: 0px 20px;
     font-size: 24px;
     font-weight: bolder;
 }
 
 .modalContainer h2 {
+    padding: 0px 20px;
     font-size: 18px;
-    width: 70%;
+    width: 90%;
 }
 
 .closeWindow {
     position: absolute;
     overflow: hidden;
     right: 30px;
-    bottom: 10px;
+    bottom: 40px;
     
 }
 
@@ -44,3 +49,20 @@
   .ReactModal__Overlay--before-close {
     opacity: 0;
   }
+
+  @media only screen and (max-width: 700px) {
+    .imageGallery {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .imageGallery img {
+        width: 300px;
+    }
+    .modalContainer {
+        width: 100vw;
+        height: 100vh;
+    }
+
+  }
+  
