@@ -70,6 +70,7 @@ class ProjectCard extends React.Component {
           }
           colour={this.state.colour}
           onMouseEnter={() => this.hoverOn()}
+          onClick={() => this.hoverOn()}
           onMouseLeave={() => this.hoverOff()}
         >
           {this.state.hover && (
