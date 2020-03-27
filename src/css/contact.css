@@ -29,6 +29,7 @@
   .interest-container {
     background-color: #0B1D51;
     padding: 20px;
+    align-self: baseline;
     flex-grow: 2;
   }
 
@@ -48,9 +49,9 @@
     transition: color .25s ease
   }
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 800px) {
     .interest-message {
-      font-size: 18px;
+      font-size: 20px;
     }
 
 }

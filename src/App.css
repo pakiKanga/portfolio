@@ -159,18 +159,14 @@ body {
     height: 20vh;
   }
 
-  .flip-card { 
-    width: 75vw;
-    height: 20vh;
-  }
-
   .caption {
     padding: 20px 0px;
     width: 70vw;
   }
 
   .contact-icon {
-    font-size: 28px;
+    font-size: 36px;
+
     
   }
 
