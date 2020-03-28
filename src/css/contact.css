@@ -4,6 +4,7 @@
 .contact-container {
     background-color: #0B1D51;
     display: flex;
+    align-items: center;
     color: white;
     padding-bottom: 5px;
 
@@ -11,7 +12,6 @@
 
 .contact-list {
     padding-right: 20vw;
-    padding-top: 20px;
     display: flex;
     list-style: none;
     padding-bottom: 5px;
@@ -25,6 +25,16 @@
     font-family: "Nunito", sans-serif;
     font-size: 32px;
   }
+  
+  .email-message a {
+    font-family: 'Nunito', sans-serif;
+    color: #E64A19;
+    font-size: 18px;
+  }
+
+  .email-message a:visited {
+    color: rgb(202, 65, 24);
+  }
 
   .interest-container {
     background-color: #0B1D51;
@@ -36,7 +46,7 @@
   
   .contact-icon {
     padding-left: 20px;
-    font-size: 48px;
+    font-size: 64px;
     color: #0099ff;
   }
 
