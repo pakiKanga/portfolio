@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./../css/summary.css";
 import * as Scroll from "react-scroll";
 import Fade from "react-reveal/Fade";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faChevronDown}  from '@fortawesome/free-solid-svg-icons';
 
 // Or Access Link,Element,etc as follows
 let scroll = Scroll.animateScroll;
@@ -79,7 +81,7 @@ class Summary extends Component {
         </div>
         <div className="bottom-container">
           <button className="scrollDownButton" onClick={this.scrollDown}>
-            <i className="fas fa-chevron-down scroll-down-icon" />
+          <FontAwesomeIcon className="scroll-down-icon" icon={faChevronDown} /> 
           </button>
         </div>
       </div>
