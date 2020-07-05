@@ -4,7 +4,6 @@
   color: black;
   text-align: left;
   font-family: "Nunito", sans-serif;
-  background-color: #0b1d51;
   color: white;
   display: flex;
   align-items: flex-start;
@@ -13,8 +12,7 @@
 }
 
 .summaryParentContainer {
-  background-color: #0b1d51;
-  min-height: 100vh;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);        min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -69,7 +67,6 @@
 
 .bottom-container {
   min-height: 15vh;
-  background-color: #0b1d51;
   width: 100%;
   text-align: center;
 }
