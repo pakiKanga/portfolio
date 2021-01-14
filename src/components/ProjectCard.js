@@ -98,14 +98,16 @@ class ProjectCard extends React.Component {
           style={customStyles}
           contentLabel="Example Modal"
         >
+
+          <div className="modalContainer">
           <button onClick={() => this.setState({ modalOpen: false })}>
             <img
               className="closeWindow"
               alt="close"
               src={require("./../images/close_icon.png")}
+              style={{width: '50px', height: '50px'}}
             />
           </button>
-          <div className="modalContainer">
             <div className="imageGallery">
               {images && (
                 <ImageGallery

@@ -1,69 +1,59 @@
 @import "~animate.css/animate.css";
 
 
-.contact-container {
-    background-color: #0B1D51;
-    display: flex;
-    align-items: center;
-    color: white;
-    padding-bottom: 5px;
 
+.contact-container {
+  background-color: #0b1d51;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding-bottom: 5px;
 }
 
 .contact-list {
-    padding-right: 20vw;
-    display: flex;
-    list-style: none;
-    padding-bottom: 5px;
-    margin-bottom: 0px;
-    flex-grow: 0;
-    background-color: #0B1D51;
-  
-  }
+  padding-right: 20vw;
+  display: flex;
+  list-style: none;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  flex-grow: 0;
+  background-color: #0b1d51;
+}
 
-  .interest-message {
-    font-family: "Nunito", sans-serif;
-    font-size: 32px;
-  }
-  
-  .email-message a {
-    font-family: 'Nunito', sans-serif;
-    color: #E64A19;
-    font-size: 18px;
-  }
+.interest-message {
+  font-family: "Nunito", sans-serif;
+  font-size: 32px;
+}
 
-  .email-message a:visited {
-    color: rgb(202, 65, 24);
-  }
+.email-message a {
+  font-family: "Nunito", sans-serif;
+  color: #e64a19;
+  font-size: 2rem;
+}
 
-  .interest-container {
-    background-color: #0B1D51;
-    padding: 20px;
-    align-self: baseline;
-    flex-grow: 2;
-  }
+.email-message a:visited {
+  color: rgb(202, 65, 24);
+}
 
-  
-  .contact-icon {
-    padding-left: 20px;
-    font-size: 64px;
-    color: #0099ff;
-  }
+.interest-container {
+  background-color: #0b1d51;
+  padding: 20px;
+  align-self: baseline;
+  flex-grow: 2;
+}
 
-  .white {
-    color: white;
-  }
-  
-  .contact-icon:hover{
-    color: #FF9800;
-    transition: color .25s ease
-  }
+.contact-icon {
+  padding-left: 20px;
+  color: #0099ff;
+}
 
-  @media only screen and (max-width: 800px) {
-    .interest-message {
-      font-size: 20px;
-    }
+.white {
+  color: white;
+}
 
+.contact-icon:hover {
+  color: #ff9800;
+  transition: color 0.25s ease;
 }
 
 .featured-projects {
@@ -81,3 +71,13 @@
   color: black;
 }
 
+@media only screen and (max-width: 600px) {
+    .contact-container {
+      flex-direction: column;
+    }
+    .contact-list {
+      padding-right: 0;
+  
+      
+    }
+  }

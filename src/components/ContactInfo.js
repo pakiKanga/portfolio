@@ -29,7 +29,7 @@ class ContactInfo extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon  className="contact-icon white"  icon={faLinkedin} />
+              <FontAwesomeIcon width={50} height={50}  className="contact-icon white"  icon={faLinkedin} size="6x" />
             </a>
           </li>
           <li>
@@ -38,7 +38,7 @@ class ContactInfo extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon className="contact-icon white" icon={faEnvelope} />
+              <FontAwesomeIcon className="contact-icon white" icon={faEnvelope} size="6x"/>
             </a>
           </li>
         </ul>
