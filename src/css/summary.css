@@ -19,6 +19,12 @@
   
 }
 
+.navbar {
+    font-family: 'Nunito', sans-serif;
+    padding-left: 30px;
+    color: white;
+}
+
 .summary-intro-container {
   font-size: 36px;
   font-weight: bold;
@@ -42,6 +48,15 @@
   width: 100%;
   padding: 0px 30px;
 }
+
+.currentlyWorking {
+    margin-top: 30px;
+    text-align: left;
+    font-weight: normal;
+    font-size: 24px;
+    width: 100%;
+    padding: 0px 30px;
+  }
 
 .imageContainer {
   margin: 0 auto;

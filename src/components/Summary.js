@@ -67,6 +67,10 @@ class Summary extends Component {
                 I'm a full-stack software developer.
               </div>
               <div className="secondSummary">I specialise in developing full stack products with a good eye for aesthetics. My skillset includes web development, data analytics/visualisation and graphic design.</div>
+              <div className="currentlyWorking">
+                  <span>Currently at: </span>
+                  <span>Service NSW</span>
+              </div>
             </div>
           </Fade>
           <div className="imageContainer">
